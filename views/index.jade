@@ -1,0 +1,11 @@
+link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+link(rel='stylesheet', href='home.css')
+
+div(class='container')
+  img(src='https://telegram.org/file/811140913/1/1sNqD4uVScs/a462d4fca3dc794db2')
+  div(class='form-group')
+    label Check Your File Size
+    form(action='/getsize', method='POST', enctype='multipart/form-data')
+      input(class='form-control-file', type='file', name='fileUpload', aria-describedby="fileHelp")
+      input(class='btn btn-primary', type='submit')
+      small(id='fileHelp', class="form-text text-muted") File size will be read upon submission.
